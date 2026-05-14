@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor - CloudPlay</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="player-header">
+  <a href="index.html" class="back-link">← Volver</a>
+  <h1>CloudPlay</h1>
+</header>
+
+    <main class="cinema-layout">
+        <section class="watch-area">
+            <div class="cinema-card">
+                <span class="live-badge">STREAMING</span>
+                <video id="video-player" controls poster=""></video>
+            </div>
+
+            <article class="video-info-panel">
+                <p class="category-label">Contenido destacado</p>
+                <h2 id="video-title">Cargando video...</h2>
+                <p id="video-description"></p>
+
+                <div class="video-actions">
+                    <button type="button">Me gusta</button>
+                    <button type="button">Compartir</button>
+                    <button type="button">Guardar</button>
+                </div>
+            </article>
+
+            <section class="comments-section creative-comments">
+                <h2>Comentarios</h2>
+
+                <form id="comment-form" class="comment-form">
+                    <textarea id="comment-content" placeholder="Comparte tu opinión sobre este video..."></textarea>
+                    <button type="submit">Publicar comentario</button>
+                </form>
+
+                <div id="comments-container"></div>
+            </section>
+        </section>
+
+        <aside class="recommendations creative-aside">
+            <h2>Más para ver</h2>
+            <p>Recomendaciones de la misma categoría</p>
+            <div id="recommendations-container"></div>
+        </aside>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/player.js"></script>
+</body>
+
+</html>
