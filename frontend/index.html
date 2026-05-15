@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CloudPlay</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CloudPlay</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-  <header class="header">
-    <h1>CloudPlay</h1>
-    <p>Explora contenido multimedia en la nube</p>
+    <header class="header">
+        <h1>CloudPlay</h1>
+        <p>Explora contenido multimedia en la nube</p>
 
-    <a href="upload.html">
-      Subir video
-    </a>
-  </header>
+        <a class="upload-link" href="upload.html">Subir video</a>
+    </header>
 
-  <main class="main-grid">
+    <main class="main-grid">
 
-    <section class="hero">
-      <h2>Catálogo de videos</h2>
+        <section class="hero">
+            <h2>Catálogo de videos</h2>
 
-      <p>
-        Disfruta contenido multimedia almacenado y distribuido desde servicios cloud.
-      </p>
-    </section>
+            <p>
+                Disfruta contenido multimedia almacenado y distribuido desde servicios cloud.
+            </p>
+        </section>
 
-    <section>
-      <h2>Videos recientes</h2>
+        <section>
+            <h2>Videos recientes</h2>
 
-      <div id="videos-container" class="videos-grid"></div>
-    </section>
+            <div id="videos-container" class="videos-grid"></div>
+        </section>
 
-  </main>
+    </main>
 
-  <footer class="footer">
-    <p>Proyecto desarrollado con FastAPI y AWS Cloud</p>
-  </footer>
+    <footer class="footer">
+        <p>Proyecto desarrollado con FastAPI y AWS Cloud</p>
+    </footer>
 
-  <script src="js/api.js"></script>
-  <script src="js/videos.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/videos.js"></script>
 
 </body>
+
 </html>
