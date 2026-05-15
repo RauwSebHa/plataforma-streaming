@@ -153,9 +153,27 @@ textarea {
   display: inline-block;
   margin-top: 1rem;
   background: #38bdf8;
-  color: #020617;
+  color: #ffffff;
   padding: 0.7rem 1rem;
   border-radius: 0.6rem;
   text-decoration: none;
   font-weight: bold;
+}
+
+.upload-link:hover {
+  opacity: 0.9;
+}
+
+.upload-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.upload-form input,
+.upload-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: none;
 }

@@ -1,25 +1,19 @@
 <header class="header">
   <h1>CloudPlay</h1>
-  <a href="index.html">Volver al catálogo</a>
+  <a class="upload-link" href="index.html">Volver al catálogo</a>
 </header>
 
 <main class="main-grid">
   <section class="hero">
     <h2>Subir nuevo video</h2>
 
-    <form id="upload-form">
+    <form id="upload-form" class="upload-form">
       <input type="text" id="title" placeholder="Título del video" required />
-
       <textarea id="description" placeholder="Descripción"></textarea>
-
       <input type="number" id="user-id" placeholder="ID del usuario" required />
-
       <input type="number" id="category-id" placeholder="ID de categoría" required />
-
       <input type="file" id="video-file" accept="video/*" required />
-
       <input type="file" id="thumbnail-file" accept="image/*" required />
-
       <button type="submit">Subir video</button>
     </form>
 
